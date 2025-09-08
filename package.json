@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/gl-matrix": "^2.4.5",
+    "@types/gsap": "^1.20.2"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3",
+    "gsap": "^3.12.7"
+  }
+}

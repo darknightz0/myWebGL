@@ -1,0 +1,664 @@
+/*start DropList*/
+.DropList.option{
+    position:relative;
+    width:max-content;
+    border: 5px ridge rgb(3, 115, 227) ;
+    min-width: 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+.DropList.option:hover{
+    background-color: rgb(162, 162, 162);
+}
+.DropList.list{
+    position: absolute;
+}
+.DropList{
+    max-width: 100px;
+    margin: 0 0;
+    z-index: 1;
+}
+.DropList.contain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:max-content;
+    user-select: none;
+    padding: 8px;
+}
+/*end DropList*/
+/*start div-message*/
+div-message{
+    position: fixed;
+    left: 20%;
+    top: 78%;
+    height: 20%;
+    width: 60%;
+    color: black;
+    background-color:rgb(214, 205, 205);
+    border: 5px ridge rgb(69, 154, 229);
+    user-select: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+div-message p{
+    word-wrap: break-word;
+    
+}
+div-message img{
+   display: none;
+    position:sticky;
+    width: 4%;
+    height: 30%;
+    left: 97%;
+    bottom: 1%;
+}
+div-message .divtit{
+    position: absolute;
+    overflow:hidden;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 25%;
+    margin: 0 0;
+    vertical-align: middle;
+    border-bottom: 5px solid black;
+    border-bottom-style: ridge;
+    z-index: 1;
+} 
+div-message .divtit p{
+    margin: 0 0;
+    padding: 1% 2.5%;
+    font-weight: bolder;
+    font-size: 120%;
+}
+div-message .divcon{
+    position: absolute;
+    overflow:hidden auto;
+    left: 0%;
+    top: 25%;
+    width: 100%;
+    height: 75%;
+    margin: 0 0;
+} 
+div-message .divcon::-webkit-scrollbar{
+    width: 0px;
+    height: 30px;
+}
+div-message .divcon::-webkit-scrollbar-thumb {
+    background: #90c9f1; /* 滑塊顏色 */
+    border-radius: 6px; 
+    border: 2px solid #dbd9e1; 
+  }
+  
+  /* 滾動條的軌道 */
+div-message .divcon::-webkit-scrollbar-track {
+    background: #a49a9a; /* 軌道顏色 */
+    border-radius: 6px; 
+  }
+div-message .divcon p{
+    margin: 2% 2%;  
+}
+/*end*/
+/*start div-itemspace*/
+div-itemspace{
+    display: block;
+    position:relative;
+    width: 100px;
+    height: 100px;
+
+}
+div-itemspace .dsc{
+ position: relative;
+ display: none;
+ width: 50px;
+ height: 50px;
+ background-color: rgb(95, 82, 64);
+ z-index: 1;
+}
+div-itemspace img{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+/*end*/
+/*start StartPage*/
+.StartPage.contain{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(2, 37, 57);
+    background-size:auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+   
+}
+.StartPage.contain .btn{
+
+    font-size: 30px;
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(9, 2, 79);
+    border-radius: 15px;
+    border: 5px ridge rgb(1, 110, 172);
+}
+.StartPage.contain .btn:hover{
+    background: rgb(13, 2, 129);
+}
+/*end StartPage*/
+/*start Page*/
+.Page.back{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.Page.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+    background: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 80%;
+    z-index: 3;
+    border: 5px ridge rgb(2, 0, 6);
+    user-select: none;	
+}
+.Page.main.Option div{
+    cursor: pointer;
+}
+/*end Page*/
+/*start Contain*/
+.contain.divc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contain.divr{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+    justify-content: center;
+   
+}
+
+
+.setting{
+    position: absolute;
+    right: 0;
+    top: 0%;
+    width: 50px;
+    height: 50px;
+}
+/*end Contain*/
+/*start BounceMessage*/
+.bounceMessage.contain{
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+    width: 60%;
+    height: 7%;
+    background-color: rgb(235, 235, 235);
+    border: 10px ridge #000;
+    color: #000;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+}
+.bounceMessage.txt{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+}
+.bounceMessage.icon{
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
+}
+/*end BounceMessage*/
+/*start NextPage*/
+.nextPage.contain{
+
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    
+    flex-direction:column;
+    align-items: center;
+}
+.nextPage.main{
+    background-color: #4c0b01;
+
+}
+/*end NextPage*/
+/*start LRList*/
+.LRList.contain{
+    width: 70%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.LRList.imgl{
+    height: 100%;
+    width: 20%;
+    left: 0;
+    cursor: pointer;
+}
+.LRList.txt{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    flex-direction: column;
+    
+    justify-content: center;
+   
+}
+.LRList.imgr{
+    height: 100%;
+    width: 20%;
+    right: 0;
+    cursor: pointer;
+}
+/*end LRList*/
+/*start EndingCredits*/
+.EndingCredits.contain{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 99;
+    flex-direction:column;
+    align-items: center;
+
+}
+.EndingCredits.type0.contain{
+    position:absolute;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 80%;
+    height: auto;
+    top:20%;
+    user-select: none;
+}
+.EndingCredits.type0.txt{
+    margin-bottom: 20px;
+}
+.EndingCredits.type1.contain{
+    position:absolute;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: bold;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    user-select: none;
+    display:none;
+}
+/*end EndingCredits*/
+.txtEdge{
+   background-color: #000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.1em transparent;
+}
+/*start ShineBox*/
+.ShineBox.light{
+ display: none;
+  position:absolute;
+  width: 20px;
+    height: 400%;
+   
+    background: linear-gradient(
+      to right,
+      rgba(248, 245, 214, 0.2) 0%,
+      rgba(254, 241, 193, 0.8) 50%,
+      rgba(252, 251, 240, 0.2) 100%
+    );
+    rotate: 45deg;
+    z-index: 1;
+    border-top: 5px solid red;
+}
+.ShineBox.bg{
+  display: none;
+  position:absolute;
+  background-color: rgba(251, 252, 250, 0.822);
+  width: 10%;
+  height:50%;
+  border-radius: 5px;
+ 
+}
+.ShineBox.contain{
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  width:400px;
+  height: 100px;
+  background-size: 200% 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ShineBox.txt{
+  width: 95%;
+  height: 90%;
+  border-radius: 5px;
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+/*end ShineBox*/
+/*start Marquee*/
+.Marquee.contain{
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+} 
+.Marquee.main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}
+/*end Marquee*/
+/*start TextColor*/
+.TextColor.contain{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-size: 25px;
+  padding: 1px;
+  font-weight: bold;
+}
+.TextColor.edge{
+  position: absolute;
+  color: transparent;
+  -webkit-background-clip: text; 
+  -webkit-text-stroke: 0.1em transparent;
+  background-clip: text;
+  user-select: none;
+ 
+}
+.TextColor.main{
+  position: relative;
+  background-color: rgb(155, 155, 155);
+  color: transparent;
+  
+  -webkit-background-clip: text; /* 背景裁剪到文字 */
+  background-clip: text;
+}
+.TextColor.hover,
+.TextColor.selected {
+  color: rgb(255, 215, 0);
+}
+  
+/*end TextColor*/
+/*Start StarRating*/
+.StarRating.contain{
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+}
+/*end StarRating*/
+/*Start PriceLabel*/
+.PriceLabel.contain{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.PriceLabel.unit{
+  font-size: smaller;
+}
+.PriceLabel.price{
+  font-size:30px;
+}
+.PriceLabel.priceOriginContain{
+  color: rgb(155, 155, 155);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height:fit-content ;
+  margin-top: 1em;
+}
+.PriceLabel.priceOrigin{
+  text-decoration:line-through;
+}
+/*end PriceLabel*/
+/*Start ItemBlock*/
+.ItemBlock.contain.type1{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height:fit-content ;
+  border: 1px solid rgb(88, 88, 88);
+}
+.ItemBlock.image.type1{
+  cursor: pointer;
+  max-width: 25%;
+  height:auto ;
+  max-height: 250px;
+}
+.ItemBlock.title.type1{
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+}
+.ItemBlock.title.type1:hover{
+  color: orange;
+}
+.ItemBlock.box.type1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 75%;
+  height:100% ;
+}
+
+.ItemBlock.car.type1{
+  cursor: pointer;
+  border-radius:15px;
+  padding: 5px;
+  background-color: goldenrod;
+}
+.ItemBlock.car.type1:hover{
+  background-color: rgb(173, 132, 26);
+}
+/*end ItemBlock*/
+/*start MoveBackground*/
+.MoveBackground.bg{
+    position: absolute;
+    width: 100.1%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.MoveBackground.contain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+/*end MoveBackground*/
+/*start PageButton*/
+.PageButton.button.selected{
+  background-color: darkgray;
+}
+.PageButton.button{
+  width: 50px;
+  height: auto;
+}
+
+.TextColor.contain.PageButton.contain{
+  border: 1px solid rgb(84, 84, 84);
+}
+.TextColor.contain.PageButton.button:hover{
+  background-color:  rgb(210, 147, 53);
+}
+.PageButton.contain{
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+/*end PageButton*/
+/*start InfoDiv*/
+.InfoDiv.contain{
+  font-size: 20px;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 5px;
+  padding: 2%;
+  padding-right: 0;
+}
+.InfoDiv.title{
+  font-size: larger;
+  font-weight: bolder;
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 0%;
+}
+.InfoDiv.subtitle{
+  
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.InfoDiv.list{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 5%;
+}
+.InfoDiv.list:hover{
+  background-color: rgb(71, 71, 71);
+}
+.InfoDiv.listTitle{
+  width: 30%;
+}
+.InfoDiv.listValue{
+  width: 70%;
+}
+.InfoDiv.hr{
+  height: 1px;
+   background-color: rgb(71, 71, 71);
+}
+/*end InfoDiv*/
+/*start UserIcon*/
+.UserIcon.icon,.UserIcon.contain{
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  border: 1px solid rgb(135, 135, 135);
+}
+.UserIcon.icon{
+  cursor: pointer;
+  user-select: none;
+}
+.UserIcon.list{
+  display: none;
+  position:fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 90%;
+  right: 0;
+  top: 10%;
+  background-color: rgb(44, 44, 44);
+  border-radius: 50px;
+  gap: 10%;
+  z-index: 1;
+}
+.UserIcon.list img{
+  border-radius: 999px;
+  width: 75px;
+  height: 75px;
+  border: 1px solid rgb(135, 135, 135);
+  user-select: none;
+}
+.UserIcon.manage{
+  border-radius: 999px;
+  border: 1px solid rgb(135, 135, 135);
+  padding: 2%;
+  cursor: pointer;
+}
+.UserIcon.manage:hover{
+   background-color: rgb(135, 135, 135);
+}
+/*end UserIcon*/
+/*start special*/
+.textEdge{
+   background-color: #000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.1em transparent;
+}

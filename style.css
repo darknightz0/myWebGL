@@ -1,0 +1,20 @@
+body{
+    background: black;
+    color: whitesmoke;
+    font-family: "微軟正黑體";
+}
+
+@media (max-width: 1024px) {
+  canvas{
+    width: 100%;
+    aspect-ratio:0.7;
+    border: 3px solid rgb(162, 46, 4);
+}
+}
+@media (min-width: 1025px) {
+  canvas{
+    width: 100%;
+    aspect-ratio:2.5;
+    border: 3px solid rgb(162, 46, 4);
+    }
+}
