@@ -57,16 +57,16 @@ onload=()=>{
       camera.focusR--;
   }
   ShaderProgram.completeCallback=()=>main();
-  ShaderProgram.loadShader(system, "/shader.vs", "/shader.fs", shaderProgram,() => {
+  ShaderProgram.loadShader(system, "shader.vs", "shader.fs", shaderProgram,() => {
     shaderProgram = shaderProgram.value;
     shaderProgram.projCameraLoca=shaderProgram.uniform["uProjCamera"];
   });  
-  ShaderProgram.loadShader(system, "/skybox.vs", "/skybox.fs", shaderProgram_skybox,() => shaderProgram_skybox = shaderProgram_skybox.value);     
-  ShaderProgram.loadShader(system, "/axis.vs", "/axis.fs", shaderBase,() =>{
+  ShaderProgram.loadShader(system, "skybox.vs", "skybox.fs", shaderProgram_skybox,() => shaderProgram_skybox = shaderProgram_skybox.value);     
+  ShaderProgram.loadShader(system, "axis.vs", "axis.fs", shaderBase,() =>{
      shaderBase = shaderBase.value;
      shaderBase.projCameraLoca = shaderBase.uniform["projCamera"];
     });     
-     ShaderProgram.loadShader(system, "/fb.vs", "/fb.fs", shaderFB,() => shaderFB = shaderFB.value);     
+     ShaderProgram.loadShader(system, "fb.vs", "fb.fs", shaderFB,() => shaderFB = shaderFB.value);     
 };
 function main() {
   var s2=new Scene();
