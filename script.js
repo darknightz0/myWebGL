@@ -1,6 +1,6 @@
 //* Vertex shader program
 
-import { vec3,vec4,mat4 } from  "./node_modules/gl-matrix/esm/index.js";
+
 import { Camera,Scene,WebGL,Mouse,FPS,ShaderProgram,Texture2D,Texture3D,Skybox,FrameBuffer,
   Cube,AxisPlain,PolyShape
  } from  "./class.js";

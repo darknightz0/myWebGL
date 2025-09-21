@@ -1,6 +1,6 @@
 /**@typedef {vec2,vec3,vec4,mat4 } */
 
-import { vec2,vec3,vec4,mat4 } from  "./node_modules/gl-matrix/esm/index.js";
+import { vec2,vec3,vec4,mat4 } from  "./libs/gl-matrix/esm/index.js";
 const identity=mat4.create();
 Number.re="";
 Number.prototype.deg2rad=function () {
